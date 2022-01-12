@@ -1,3 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/*-------------Header-----------*/
+.navbar .links {
+  color: black;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  background: url("../images/bg-tablet-pattern.svg") no-repeat;
+  width: 100%;
+  background-size: 41% 60%;
+  background-position: top -21% right -3%;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  top: 110%;
+  left: -30%;
+  width: 100%;
+  height: 100%;
+  background-size: 50%;
+}
+
+p {
+  font-size: 12px;
+  color: gray;
+}
+
+/*-------------main-----------*/
+.about-manage {
+  margin-bottom: 10%;
+}
+
+.about-manage h6, .about-manage .h6 {
+  margin-left: -75px;
+}
+
+.about-manage span {
+  padding: 5px 15px;
+  margin-right: 20px;
+  border-radius: 2em;
+  background: #f25f3a;
+}
+
+.Carousel {
+  display: none;
+}
+
+.card-1 {
+  margin-bottom: 10%;
+}
+
+.card-1 img {
+  margin-top: -75px;
+}
+
+.card-1 .card {
+  padding: 10%;
+  background: #fafafa;
+}
+
+input, a {
+  border-radius: 2em;
+}
+
+.input-text {
+  font-size: 12px;
+  width: 60%;
+}
+
+.input {
+  background: #f25f3a;
+}
+
+.ancher:hover {
+  color: white;
+  opacity: 0.75;
+}
+
+.ad .ancher {
+  margin-left: 20%;
+}
+
+.ancher {
+  text-decoration: none;
+  color: white;
+  background: #f25f3a;
+}
+
+.orange-row {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background: #f25f3a;
+}
+
+.orange-row .ancher {
+  color: #f25f3a;
+  background: white;
+}
+
+.orange-row::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -8%;
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+  z-index: -1;
+  background: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+}
+
+/*-------------footer-----------*/
+footer {
+  background: #1d1e25;
+}
+
+footer .footer-container {
+  margin-top: 2%;
+}
+
+footer .footer-container .icons {
+  margin-top: 15%;
+}
+
+footer .footer-container .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+footer .footer-container a {
+  font-size: 12px;
+  color: white;
+}
+
+footer .copyright {
+  margin-left: 76%;
+  margin-top: -2%;
+}
+
+@media (max-width: 375px) {
+  p {
+    font-size: 16px;
+  }
+  /*-------------Header-----------*/
+  header {
+    background-size: 77% 23%;
+    background-position: top -7% right -3%;
+    /*-------------main-----------*/
+  }
+  header .header-overlay {
+    position: absolute;
+    inset: 0;
+    background: #9095a7;
+    z-index: -1;
+  }
+  header .navbar {
+    margin: 0;
+  }
+  header .navbar .ancher {
+    display: none;
+  }
+  header .manu {
+    text-align: center;
+    background: white;
+    margin: 15% 5%;
+  }
+  header .ad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .ad h1, header .ad .h1 {
+    font-size: 40px;
+  }
+  header .ad p {
+    text-align: center;
+  }
+  header .profiles {
+    display: none;
+  }
+  header .Carousel {
+    display: block;
+  }
+  header .Carousel img {
+    width: 27%;
+  }
+  header .Carousel .carousel-inner {
+    overflow: visible;
+  }
+  header .about-manage {
+    margin-top: 40%;
+  }
+  header .about-manage .inner-about-manage {
+    text-align: center;
+  }
+  header .about-manage p {
+    margin-bottom: 10%;
+    line-height: 25px;
+  }
+  header .about-manage h6, header .about-manage .h6 {
+    padding: 5px;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    margin: auto;
+    background: pink;
+  }
+  header .about-manage span {
+    margin-left: -5px;
+  }
+  header .about-manage .tablet-pattern-img-1 {
+    left: 58%;
+    width: 100%;
+    z-index: -1;
+  }
+  header main::before {
+    top: 72%;
+    left: -30%;
+    background-size: 100%;
+    right: -59%;
+  }
+  .orange-row h2, .orange-row .h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .orange-row::before {
+    background-size: 100%;
+    left: -75%;
+    top: 10%;
+  }
+  /*-------------Header-----------*/
+  footer p {
+    font-size: 12px;
+  }
+  footer .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-container .logo-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-container .logo {
+    margin-top: 20%;
+    margin-left: 25%;
+  }
+  footer .footer-container .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .footer-container .icons img {
+    width: 40px;
+  }
+  footer .footer-container .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    color: white;
+    margin-top: 10%;
+  }
+  footer .copyright {
+    padding-top: 20%;
+    padding-left: 20%;
+    margin: auto;
+  }
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11955,9 +12262,5 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
-}
-
-.container {
-  background-image: url("../images/bg-simplify-section-desktop.svg");
 }
 /*# sourceMappingURL=custome.css.map */
