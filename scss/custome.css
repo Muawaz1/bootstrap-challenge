@@ -92,10 +92,6 @@ input, a {
   opacity: 0.75;
 }
 
-.ad .ancher {
-  margin-left: 20%;
-}
-
 .ancher {
   text-decoration: none;
   color: white;
@@ -156,36 +152,61 @@ footer .footer-container a {
 }
 
 footer .copyright {
-  margin-left: 76%;
-  margin-top: -2%;
+  margin-left: 68%;
+  margin-top: -4%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   p {
     font-size: 16px;
   }
-  /*-------------Header-----------*/
   header {
-    background-size: 77% 23%;
-    background-position: top -7% right -3%;
-    /*-------------main-----------*/
+    background-size: 56% 49%;
+    background-position: top -26% right -36%;
+  }
+  header .navbar .ancher {
+    display: none;
   }
   header .header-overlay {
     position: absolute;
     inset: 0;
     background: #9095a7;
     z-index: -1;
-  }
-  header .navbar {
-    margin: 0;
-  }
-  header .navbar .ancher {
-    display: none;
+    opacity: 0.4w;
   }
   header .manu {
     text-align: center;
     background: white;
     margin: 15% 5%;
+  }
+  main::before {
+    top: 66%;
+    left: -30%;
+  }
+  main .profiles {
+    display: none;
+  }
+  main .Carousel {
+    display: block;
+  }
+  main .Carousel img {
+    margin-top: -100px;
+    width: 23%;
+  }
+  main .Carousel .carousel-inner {
+    overflow: visible;
+  }
+}
+
+footer p {
+  font-size: 12px;
+}
+
+@media (max-width: 375px) {
+  /*-------------Header-----------*/
+  header {
+    background-size: 77% 23%;
+    background-position: top -7% right -3%;
   }
   header .ad {
     display: -webkit-box;
@@ -202,23 +223,14 @@ footer .copyright {
   header .ad p {
     text-align: center;
   }
-  header .profiles {
-    display: none;
-  }
-  header .Carousel {
-    display: block;
-  }
-  header .Carousel img {
-    width: 27%;
-  }
-  header .Carousel .carousel-inner {
-    overflow: visible;
-  }
   header .about-manage {
     margin-top: 40%;
   }
   header .about-manage .inner-about-manage {
     text-align: center;
+  }
+  header .about-manage h2, header .about-manage .h2 {
+    font-size: 35px;
   }
   header .about-manage p {
     margin-bottom: 10%;
@@ -239,11 +251,16 @@ footer .copyright {
     width: 100%;
     z-index: -1;
   }
-  header main::before {
-    top: 72%;
-    left: -30%;
+  /*-------------main-----------*/
+  main::before {
+    top: 82%;
+    left: auto;
     background-size: 100%;
     right: -59%;
+  }
+  main .Carousel img {
+    width: 27%;
+    margin-top: -75px;
   }
   .orange-row h2, .orange-row .h2 {
     font-size: 35px;
@@ -254,7 +271,7 @@ footer .copyright {
     left: -75%;
     top: 10%;
   }
-  /*-------------Header-----------*/
+  /*-------------footer-----------*/
   footer p {
     font-size: 12px;
   }
@@ -274,8 +291,7 @@ footer .copyright {
             flex-direction: column-reverse;
   }
   footer .footer-container .logo {
-    margin-top: 20%;
-    margin-left: 25%;
+    margin-top: 10%;
   }
   footer .footer-container .icons {
     display: -webkit-box;
